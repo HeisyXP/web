@@ -3,23 +3,28 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
-import { benefitOne, benefitTwo } from "../components/data";
+import { benefitOne } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
+import Container from "../components/container";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import Image from "next/image";
+import Amelias from "../public/img/Amelias.webp";
+import Jetro from "../public/img/Jetro.png";
+import JetroM from "../public/img/Jetro-ministry.png";
 
 const Home = () => {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>HeisyXP: Helping ease international trade of used vehicles</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="HeisyXP allows you to easily import and export overseas"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,37 +32,68 @@ const Home = () => {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        pretitle="Why HeisyXP?"
+        title="Cross-border turn-key solutions">
+        User journey made as easy as possible with simple and clear instructions on how to start your own personal trading platform.
       </SectionTitle>
       <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
-      <SectionTitle
+      {/* <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs">
         This section is to highlight a promo or demo video of your product.
         Analysts says a landing page with video has 3% more conversion rate. So,
         don&apos;t forget to add one. Just like this.
       </SectionTitle>
-      <Video />
+      <Video /> */}
       <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        pretitle="Challenges"
+        title="〝I want to start exporting. Please tell me about exporting〞">
+        Voices like this arrive on my YouTube every day - Ayaka Wada, CEO HeisyXP
       </SectionTitle>
-      <Testimonials />
+      {/* <Testimonials /> 
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
       </SectionTitle>
-      <Faq />
+      <Faq />*/}
       <Cta />
+      <SectionTitle
+        pretitle="Acknowledgements"
+        title="People trust us">
+        We are really pleased to announce that we have been selected for some of the most prestigious startup accelerator programs.
+      </SectionTitle>
+      <Container className="flex flex-wrap justify-around items-center">
+        <Image
+              src={Amelias}
+              width="200"
+              className={"h-fit"}
+              alt="Amelias"
+              loading="lazy"
+              placeholder="blur"
+              style={{borderRadius: "20px"}}
+        />
+        <Image
+              src={Jetro}
+              width="300"
+              className={"h-fit my-4"}
+              alt="Jetro"
+              loading="lazy"
+              placeholder="blur"
+              style={{borderRadius: "20px"}}
+            />
+      <Image
+              src={JetroM}
+              width="300"
+              className={"h-fit"}
+              alt="Jetro Ministry"
+              loading="lazy"
+              placeholder="blur"
+              style={{borderRadius: "20px"}}
+            />
+      </Container>
+      
       <Footer />
-      <PopupWidget />
+      {/* <PopupWidget /> */}
     </>
   );
 }
