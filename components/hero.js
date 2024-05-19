@@ -34,7 +34,7 @@ global circulation of automotives.
               width="500"
               className={"object-cover"}
               alt="Hero Illustration"
-              loading="eager"
+              loading="lazy"
               placeholder="blur"
               style={{borderRadius: "20px"}}
             />
