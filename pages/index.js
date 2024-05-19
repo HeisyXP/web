@@ -29,6 +29,8 @@ const Home = () => {
           content="HeisyXP allows you to easily import and export overseas"
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32" rel="shortcut icon" />
       </Head>
 
       <Navbar />
