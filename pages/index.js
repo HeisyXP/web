@@ -17,6 +17,8 @@ import Amelias from "../public/img/Amelias.webp";
 import Jetro from "../public/img/Jetro.png";
 import JetroM from "../public/img/Jetro-ministry.png";
 
+export const runtime = "experimental-edge";
+
 const Home = () => {
   return (
     <>
