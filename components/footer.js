@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
+import Logo from "/public/logo.png";
 
 export default function Footer() {
   const navigation = [];
@@ -16,7 +17,7 @@ export default function Footer() {
               <Link href="/">
                     <span>
                       <Image
-                        src="/logo.png"
+                        src={Logo}
                         alt="N"
                         width="512"
                         height="152"

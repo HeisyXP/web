@@ -68,7 +68,7 @@ const Home = () => {
         <Image
               src={Amelias}
               width="200"
-              className={"h-fit"}
+              className={"h-fit my-4"}
               alt="Amelias"
               loading="lazy"
               placeholder="blur"
@@ -86,7 +86,7 @@ const Home = () => {
       <Image
               src={JetroM}
               width="300"
-              className={"h-fit"}
+              className={"h-fit my-4"}
               alt="Jetro Ministry"
               loading="lazy"
               placeholder="blur"

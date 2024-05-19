@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
+import Logo from "/public/logo.png";
 import { Disclosure } from "@headlessui/react";
 
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
                 <Link href="/">
                     <span>
                       <Image
-                        src="/logo.png"
+                        src={Logo}
                         alt="N"
                         width="512"
                         height="152"
